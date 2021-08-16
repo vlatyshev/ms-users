@@ -9,8 +9,8 @@ const sortStoreList = (store) => {
       const [, rulePropsA] = ruleA;
       const [, rulePropsB] = ruleB;
 
-      const ruleClaimsSizeA = Object.keys(rulePropsA.claims);
-      const ruleClaimsSizeB = Object.keys(rulePropsB.claims);
+      const ruleClaimsSizeA = Object.keys(rulePropsA.claims).length;
+      const ruleClaimsSizeB = Object.keys(rulePropsB.claims).length;
 
       return ruleClaimsSizeA - ruleClaimsSizeB;
     });
